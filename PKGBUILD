@@ -5,8 +5,8 @@
 # 						Contributor: judd <jvinet@zeroflux.org>
 
 pkgname=openssh
-pkgver=7.5p1
-pkgrel=3
+pkgver=7.6p1
+pkgrel=2
 pkgdesc='Free version of the SSH connectivity tools'
 url='https://www.openssh.org/portable.html'
 license=('custom:BSD')
@@ -22,8 +22,8 @@ source=("https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/${pkgname}-${pkgve
         'openssl-1.1.0.patch'
         'sshd.pam'
         'sshd.conf')
-sha1sums=('5e8f185d00afb4f4f89801e9b0f8b9cee9d87ebd'
-          '6d9ea19bb4fa2e4b5f14cad331f36bfbdaafd067'
+sha1sums=('a6984bc2c72192bed015c8b879b35dd9f5350b3b'
+          '6c16b162aa98ff5bdfd6d747e3219919f7b1c729'
           'd93dca5ebda4610ff7647187f8928a3de28703f3'
           'c9b2e4ce259cd62ddb00364d3ee6f00a8bf2d05f')
 validpgpkeys=('6DD4217456569BA711566AC7F06E8FDE7B45DAAC') # Eric Vidal
