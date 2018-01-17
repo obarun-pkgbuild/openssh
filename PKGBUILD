@@ -6,7 +6,7 @@
 
 pkgname=openssh
 pkgver=7.6p1
-pkgrel=2
+pkgrel=3
 pkgdesc='Free version of the SSH connectivity tools'
 url='https://www.openssh.org/portable.html'
 license=('custom:BSD')
@@ -14,9 +14,7 @@ arch=('x86_64')
 makedepends=('linux-headers')
 depends=('krb5' 'openssl' 'libedit' 'ldns')
 optdepends=('xorg-xauth: X11 forwarding'
-            'x11-ssh-askpass: input passphrase in X'
-            'sshd-s6serv: sshd s6 service'
-            'sshd-runitserv: sshd runit service')
+            'x11-ssh-askpass: input passphrase in X')
 validpgpkeys=('59C2118ED206D927E667EBE3D3E5F56B6D920D30')
 source=("https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/${pkgname}-${pkgver}.tar.gz"
         'openssl-1.1.0.patch'
@@ -54,6 +52,7 @@ build() {
 		--with-xauth=/usr/bin/xauth \
 		--with-md5-passwords \
 		--with-pid-dir=/run \
+		--with-default-path='/usr/local/sbin:/usr/local/bin:/usr/bin' \
 
 	make
 }
