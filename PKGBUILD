@@ -5,9 +5,9 @@
 # 						Contributor: judd <jvinet@zeroflux.org>
 
 pkgname=openssh
-pkgver=7.7snap20180324
+pkgver=7.7p1
 pkgrel=2
-pkgdesc='Free version of the SSH connectivity tools'
+pkgdesc='Premier connectivity tool for remote login with the SSH protocol'
 url='https://www.openssh.org/portable.html'
 license=('custom:BSD')
 arch=('x86_64')
